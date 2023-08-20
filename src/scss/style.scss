@@ -3,8 +3,10 @@
 @import "mixins";
 @import "vendor";
 @import "settings";
+@import "fonts";
 
 //Компоненты страницы
+@import "blocks/timer";
 
 //Адаптивность страницы
 @import "media";

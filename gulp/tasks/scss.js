@@ -28,7 +28,7 @@ export const scss = () => {
       )
       .pipe(app.plugins.replace(/@img\//g, "../img/"))
       .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
-      .pipe(
+      /* .pipe(
         app.plugins.if(
           app.isBuild,
           webpcss({
@@ -36,7 +36,7 @@ export const scss = () => {
             noWebpClass: ".no-webp",
           })
         )
-      )
+      ) */
       .pipe(
         app.plugins.if(
           app.isBuild,

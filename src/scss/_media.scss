@@ -1,10 +1,79 @@
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
+  .countdown {
+    &__text {
+      font-size: 35px;
+    }
+    span {
+      font-size: 120px;
+    }
+  }
 }
 @media (max-width: 992px) {
+  .timer {
+    &__title {
+      font-size: 70px;
+    }
+  }
+  .countdown {
+    column-gap: 50px;
+    &__item {
+      &:not(:last-child):after {
+        right: -33px;
+      }
+    }
+    &__text {
+      font-size: 30px;
+    }
+    span {
+      font-size: 90px;
+    }
+  }
 }
 @media (max-width: 768px) {
+  .timer {
+    &__title {
+      font-size: 55px;
+    }
+  }
+  .countdown {
+    margin-top: 50px;
+    column-gap: 25px;
+    &__item {
+      &:not(:last-child):after {
+        font-size: 25px;
+        right: -17px;
+      }
+    }
+    &__text {
+      font-size: 25px;
+    }
+    span {
+      font-size: 65px;
+    }
+  }
 }
 @media (max-width: 576px) {
+  .timer {
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .countdown {
+    margin-top: 25px;
+    column-gap: 25px;
+    &__item {
+      &:not(:last-child):after {
+        font-size: 25px;
+        right: -17px;
+      }
+    }
+    &__text {
+      font-size: 12px;
+    }
+    span {
+      font-size: 30px;
+    }
+  }
 }
